@@ -1,0 +1,156 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: radial-gradient(circle at top, #172554, #0f172a);
+  color: #e8eefc;
+}
+
+.container {
+  width: min(900px, 92%);
+  margin: 30px auto;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+.header h1 {
+  margin: 0 0 8px;
+  font-size: 2rem;
+}
+
+.subtitle {
+  margin: 0;
+  color: #b8c2dd;
+}
+
+.card {
+  background: rgba(17, 28, 51, 0.9);
+  border: 1px solid rgba(232, 238, 252, 0.15);
+  border-radius: 14px;
+  padding: 18px;
+  margin: 14px 0;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+.card h2 {
+  margin-top: 0;
+  font-size: 1.2rem;
+}
+
+.label {
+  display: block;
+  margin: 10px 0 8px;
+  color: #b8c2dd;
+}
+
+.row {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+input {
+  flex: 1;
+  min-width: 180px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid rgba(232, 238, 252, 0.15);
+  background: rgba(255, 255, 255, 0.06);
+  color: #e8eefc;
+  outline: none;
+}
+
+input:focus {
+  border-color: rgba(56, 189, 248, 0.6);
+}
+
+button {
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 1px solid rgba(56, 189, 248, 0.5);
+  background: rgba(56, 189, 248, 0.15);
+  color: #e8eefc;
+  cursor: pointer;
+  transition: transform 0.15s ease,
+              background 0.15s ease,
+              border-color 0.15s ease;
+}
+
+button:hover {
+  transform: translateY(-1px);
+  background: rgba(56, 189, 248, 0.25);
+  border-color: rgba(56, 189, 248, 0.8);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+.feedback {
+  margin-top: 12px;
+  padding: 10px;
+  border: 1px dashed rgba(232, 238, 252, 0.15);
+  border-radius: 10px;
+  color: #b8c2dd;
+}
+
+.attempts {
+  font-size: 1.05rem;
+  margin: 0;
+}
+
+#attemptsCount {
+  font-weight: bold;
+  color: #38bdf8;
+}
+
+.table-wrap {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 8px;
+  border: 1px solid rgba(232, 238, 252, 0.15);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+th,
+td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid rgba(232, 238, 252, 0.15);
+}
+
+thead th {
+  background: rgba(255, 255, 255, 0.06);
+  color: #e8eefc;
+}
+
+tbody tr:hover {
+  background: rgba(255, 255, 255, 0.04);
+}
+
+/* Reset section */
+.reset-card {
+  display: flex;
+  justify-content: center;
+}
+
+.reset {
+  border: 1px solid rgba(239, 68, 68, 0.6);
+  background: rgba(239, 68, 68, 0.15);
+}
+
+.reset:hover {
+  background: rgba(239, 68, 68, 0.25);
+  border-color: rgba(239, 68, 68, 0.85);
+}

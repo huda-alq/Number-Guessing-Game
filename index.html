@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Number Guessing Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    
+    <header class="header">
+      <h1>Number Guessing Game</h1>
+      <p class="subtitle">Guess the secret number (1 - 100).</p>
+    </header>
+
+    
+    <section class="card">
+      <h2>Make a Guess</h2>
+
+      <label for="guessInput" class="label">Enter your guess: </label>
+      <div class="row">
+        <input type="number" id="guessInput" min="1" max="100" placeholder="1 - 100" />
+        <button id="submitBtn">Submit Guess</button>
+      </div>
+
+      <p id="feedback" class="feedback">Start guessing...</p>
+    </section>
+
+    
+    <section class="card">
+      <h2>Attempts Tracker</h2>
+      <p class="attempts">
+        Attempts: <span id="attemptsCount">0</span>
+      </p>
+    </section>
+
+    
+    <section class="card">
+      <h2>Leaderboard: </h2>
+      <div class="table-wrap">
+        <table id="leaderboardTable">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Player Name</th>
+              <th>Attempts</th>
+            </tr>
+          </thead>
+          <tbody id="leaderboardBody">
+            
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    
+    <section class="card reset-card">
+      <button id="resetBtn" class="reset">Reset Game</button>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
